@@ -1,0 +1,52 @@
+header {
+  width: 100%;
+  height: 50px;
+
+  position: fixed;
+  background-color: blue;
+}
+
+#home {
+ width: 100%;
+ height: 100vh;
+}
+
+#home .container {
+  width: 100%;
+  height: 100%;
+  background: blanchedalmond;
+}
+
+
+#projects {
+  width: 100%;
+  height: 100vh;
+}
+
+#projects .container {
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+}
+
+#about .container {
+  width: 100%;
+  height: 100%;
+  background: yellowgreen;
+}
+
+#contato {
+  width: 100%;
+  height: 100vh;
+}
+
+#contato .container {
+  width: 100%;
+  height: 100%;
+  background: purple;
+}
