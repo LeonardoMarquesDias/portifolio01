@@ -1,11 +1,15 @@
 body .wrapper {
   width: 100%;
+  max-width: 1800px;
   margin: auto;
   background: var(--back-dark);
 }
 
+.content {
+  width: 90%;
+  margin: auto;
+}
 
-header,
 #home,
 #projects,
 #about,
@@ -17,26 +21,174 @@ header,
 
 header {
   width: 100%;
-  height: 50px;
+  max-width: 2999px;
+  height: 75px;
   position: fixed;
+  right: 0;
   top: 0;
   background: var(--back-dark);
+  z-index: 1;
 }
 
 .topnav {
-  padding: 1rem;
+  width: 100%;
+  padding: 1.5rem;
   text-align: right;
 }
 
 .topnav a {
- padding-right: 2rem;
+  padding-right: 2rem;
+  letter-spacing: 2px;
 }
 
 #home .wrapper {
   display: flex;
   width: 100%;
   height: 100%;
-  background: var(--back-dark);
+}
+
+#home .intro {
+  width: 50%;
+  height: 100%;
+}
+
+.intro .name {
+  margin-top: 7rem;
+  width: 100%;
+}
+
+.intro span {
+  letter-spacing: 1px;
+  font-size: 3rem;
+  color: var(--title);
+ }
+
+ .buttons {
+   margin-top: 4rem;
+ }
+
+ .buttons > span {
+   color: var(--purple);
+   font-size: 3rem;
+   font-weight: 600;
+   letter-spacing: 1px;
+ }
+
+
+#home .intro .leonardo {
+  margin-bottom: 5px;
+  font-size: 7rem;
+  color: var(--text);
+  font-weight: 500;
+  letter-spacing: 5px;
+  width: 550px;
+  font-style: italic;
+  text-align: center;
+}
+
+#home .intro .surname{
+  margin-bottom: 5px;
+  font-size: 7rem;
+  color: var(--text);
+  font-weight: 500;
+  letter-spacing: 5px;
+  width: 270px;
+  font-style: italic;
+  text-align: center;
+}
+
+.btn-linkdin {
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 1px;
+  border: none;
+  text-align: center;
+  height: 80px;
+  width: 265px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn-linkdin span {
+  position: relative;
+  transition: 0.5s;
+  color: var(--back-light);
+}
+
+.btn-linkdin span:after {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  font-style: italic;
+}
+
+.btn-linkdin:hover span {
+  padding-right: 25px;
+  color: #2867B2;
+  font-style: italic;
+}
+
+.btn-linkdin:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #2867B2;
+  font-style: italic;
+}
+
+.btn-github {
+  margin-top:1rem;
+  display: inline-block;
+  border-radius: 1px;
+  border: none;
+  text-align: center;
+  height: 80px;
+  width: 265px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.btn-github span {
+  position: relative;
+  transition: 0.5s;
+  color: var(--back-light);
+}
+
+.btn-github span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+  color: var(--purple);
+}
+
+.btn-github:hover span {
+  padding-left: 25px;
+  color: var(--purple);
+  font-style: italic;
+}
+
+.btn-github:hover span:after {
+  opacity: 1;
+  left: 0;
+  color: var(--purple);
+}
+
+
+
+
+#home .photo {
+  width: 50%;
+  height: 100%;
+}
+
+#home .photo img {
+  width: 100%;
+  height: 100%;
 }
 
 #projects .wrapper {
