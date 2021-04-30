@@ -1,12 +1,6 @@
 body .wrapper {
-  width: 100%;
-  max-width: 1800px;
-  margin: auto;
-  background: var(--back-dark);
-}
-
-.content {
   width: 90%;
+  max-width: 1280px;
   margin: auto;
 }
 
@@ -16,99 +10,100 @@ body .wrapper {
 #contato {
   width: 100%;
   height: 100vh;
-  margin: auto;
+  max-width: 1280px;
 }
 
+/*Header*/
 header {
-  width: 100%;
-  max-width: 2999px;
-  height: 75px;
   position: fixed;
+  width: 95%;
+  max-width: 1900px;
+  left: 0;
   right: 0;
-  top: 0;
-  background: var(--back-dark);
+  margin: 0 auto;
+  text-align: right;
   z-index: 1;
+  background: var(--back-dark);
 }
 
 .topnav {
   width: 100%;
   padding: 1.5rem;
-  text-align: right;
 }
 
 .topnav a {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
   letter-spacing: 2px;
 }
 
+/* Home content */
 #home .wrapper {
-  display: flex;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: flex;
 }
 
 #home .intro {
   width: 50%;
-  height: 100%;
+  height: 100%; 
 }
 
-.intro .name {
-  margin-top: 7rem;
-  width: 100%;
+#home .name {
+  width: 550px;
+  margin-top: 20vh;
+  margin-bottom: 0.3rem;
+  font-size: 7rem;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 5px;
+  text-align: center;
+  color: var(--text);
 }
 
+#home .surname{
+  width: 270px;
+  margin-bottom: 0.3rem;
+  font-size: 7rem;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 5px;
+  text-align: center;
+  color: var(--text);
+}
+
+/* Span Front Dnd Develop */
 .intro span {
-  letter-spacing: 1px;
   font-size: 3rem;
+  letter-spacing: 1px;
   color: var(--title);
  }
 
- .buttons {
-   margin-top: 4rem;
- }
-
- .buttons > span {
-   color: var(--purple);
-   font-size: 3rem;
-   font-weight: 600;
-   letter-spacing: 1px;
- }
-
-
-#home .intro .leonardo {
-  margin-bottom: 5px;
-  font-size: 7rem;
-  color: var(--text);
-  font-weight: 500;
-  letter-spacing: 5px;
-  width: 550px;
-  font-style: italic;
-  text-align: center;
+/* Glogal buttons */
+.buttons {
+  margin-top: 4rem;
 }
 
-#home .intro .surname{
-  margin-bottom: 5px;
-  font-size: 7rem;
-  color: var(--text);
-  font-weight: 500;
-  letter-spacing: 5px;
-  width: 270px;
-  font-style: italic;
-  text-align: center;
+.buttons > span {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--purple);
 }
 
-.btn-linkdin {
-  margin-top: 1rem;
-  display: inline-block;
-  border-radius: 1px;
-  border: none;
-  text-align: center;
+.btn-linkdin, 
+.btn-github {
   height: 80px;
   width: 265px;
+  margin-top: 1rem;
+  display: inline-block;
+  
+  text-align: center;
+  border-radius: 1px;
+  border: none;
   transition: all 0.5s;
   cursor: pointer;
 }
 
+/* Linkdin buttons */
 .btn-linkdin span {
   position: relative;
   transition: 0.5s;
@@ -127,29 +122,18 @@ header {
 
 .btn-linkdin:hover span {
   padding-right: 25px;
-  color: #2867B2;
   font-style: italic;
+  color: #2867B2;
 }
 
 .btn-linkdin:hover span:after {
-  opacity: 1;
   right: 0;
-  color: #2867B2;
+  opacity: 1;
   font-style: italic;
+  color: #2867B2;
 }
 
-.btn-github {
-  margin-top:1rem;
-  display: inline-block;
-  border-radius: 1px;
-  border: none;
-  text-align: center;
-  height: 80px;
-  width: 265px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
+/* Gihub buttons */
 .btn-github span {
   position: relative;
   transition: 0.5s;
@@ -168,20 +152,18 @@ header {
 
 .btn-github:hover span {
   padding-left: 25px;
-  color: var(--purple);
   font-style: italic;
+  color: var(--purple);
 }
 
 .btn-github:hover span:after {
-  opacity: 1;
   left: 0;
+  opacity: 1;
   color: var(--purple);
 }
 
-
-
-
-#home .photo {
+/* home-photo-container */
+.photo {
   width: 50%;
   height: 100%;
 }
@@ -190,6 +172,27 @@ header {
   width: 100%;
   height: 100%;
 }
+
+
+/* RESPONSIVE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Projects*/
+
 
 #projects .wrapper {
   width: 100%;
@@ -208,3 +211,9 @@ header {
   height: 100%;
   background: var(--back-dark);
 }
+
+
+/*
+
+
+*/
