@@ -32,19 +32,15 @@ html {
 }
 
 body {
-  color: var(--text);
-  background: var(--background-dark);
-  margin: auto;
-}
-
-body {
   height: 100vh;
+  margin: auto;
   background: var(--back-dark);
 }
 
 body {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
+  color: var(--text);
 }
 
 body, input, textarea, button {
@@ -52,13 +48,12 @@ body, input, textarea, button {
 }
 
 a {
-  color: inherit;
   font-size: 1.5rem;
   text-decoration: none;
+  color: inherit;
 }
 
 p {
-  
   font-size: 1rem;
   line-height: 1.5rem;
 }

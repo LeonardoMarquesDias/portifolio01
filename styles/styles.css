@@ -1,5 +1,5 @@
 body .wrapper {
-  width: 90%;
+  width: 95%;
   max-width: 1280px;
   margin: auto;
 }
@@ -15,59 +15,74 @@ body .wrapper {
 
 /*Header*/
 header {
-  position: fixed;
-  width: 95%;
-  max-width: 1900px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  text-align: right;
-  z-index: 1;
-  background: var(--back-dark);
-}
-
-.topnav {
   width: 100%;
-  padding: 1.5rem;
+  position: fixed;
+  margin: auto;
+  right: 0;
+  text-align: right;
+  background: var(--back-dark);
+  z-index: 1;
 }
 
-.topnav a {
-  padding-right: 1.5rem;
+header nav ul {
+  display: flex;
+  height: 6rem;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.9rem;
+  padding: 1.5rem 0rem 1.5rem 4rem;
   letter-spacing: 2px;
+  transition: all 250ms linear 0s;
+  color: white;
+}
+
+header nav ul li a:hover {
+  transition: all 0.5s;
+  text-shadow: 2px 2px 5px white;
 }
 
 /* Home content */
 #home .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 #home .intro {
   width: 50%;
-  height: 100%; 
+  height: 100%;
+  z-index: 2;
 }
 
 #home .name {
   width: 550px;
-  margin-top: 20vh;
+  margin-top: 19vh;
   margin-bottom: 0.3rem;
   font-size: 7rem;
   font-weight: 500;
   font-style: italic;
-  letter-spacing: 5px;
   text-align: center;
+  letter-spacing: 5px;
   color: var(--text);
 }
 
 #home .surname{
   width: 270px;
-  margin-bottom: 0.3rem;
+  margin-bottom: 1rem;
   font-size: 7rem;
   font-weight: 500;
   font-style: italic;
-  letter-spacing: 5px;
   text-align: center;
+  letter-spacing: 5px;
   color: var(--text);
 }
 
@@ -80,7 +95,8 @@ header {
 
 /* Glogal buttons */
 .buttons {
-  margin-top: 4rem;
+  margin-top: 10vh;
+  display: block;
 }
 
 .buttons > span {
@@ -93,7 +109,7 @@ header {
 .btn-github {
   height: 80px;
   width: 265px;
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: inline-block;
   
   text-align: center;
@@ -166,22 +182,15 @@ header {
 .photo {
   width: 50%;
   height: 100%;
+  background: var(--back-light);
 }
 
 #home .photo img {
+  height: 650px;
   width: 100%;
-  height: 100%;
+  bottom: 0;
+  vertical-align: bottom;
 }
-
-
-/* RESPONSIVE */
-
-
-
-
-
-
-
 
 
 
@@ -213,7 +222,100 @@ header {
 }
 
 
-/*
 
 
-*/
+
+
+
+/* RESPONSIVE */
+
+/*Xnav*/
+@media (max-width: 768px) {
+
+  body .wrapper {
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  /*Home-photo*/
+  nav, .photo {
+    display: none;
+  }
+
+  /*Home-intro*/
+  #home .intro {
+    width: 100%;
+    height: 100%; 
+  }
+  
+  .one,
+  .two,
+  .three {
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-top: 2rem;
+  }
+
+  /* fullscreen */
+  .menu-section.on {
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #7159c1; 
+    z-index: 10;
+  }
+
+  header nav ul li a {
+    padding: 0.5rem 0rem 2rem 0rem; 
+  }
+
+  .menu-section.on nav {
+    display: block;
+  }
+
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+  }
+
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+
+  .menu-section.on nav ul {
+    text-align: center;
+    display: block;
+  }
+
+  .menu-section.on nav ul a{
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    display: block;    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}
