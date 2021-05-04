@@ -1,7 +1,7 @@
 body .wrapper {
-  width: 95%;
-  max-width: 1280px;
+  width: 85%;
   margin: auto;
+  max-width: 1450px;
 }
 
 #home,
@@ -10,43 +10,43 @@ body .wrapper {
 #contato {
   width: 100%;
   height: 100vh;
-  max-width: 1280px;
+  max-width: 1450px;
 }
 
 /*Header*/
 header {
   width: 100%;
-  position: fixed;
-  margin: auto;
   right: 0;
+  margin: auto;
+  position: fixed;
   text-align: right;
-  background: var(--back-dark);
-  z-index: 1;
+  z-index: 999;
 }
 
 header nav ul {
+  height: 12vh;
   display: flex;
-  height: 6rem;
-  justify-content: flex-end;
+  justify-content: center;
+  background: var(--back-dark);
 }
 
 header nav ul li {
-  list-style: none;
   margin-top: 2rem;
+  list-style: none;
 }
 
 header nav ul li a {
-  text-decoration: none;
-  font-size: 1.9rem;
-  padding: 1.5rem 0rem 1.5rem 4rem;
+  font-size: 1.6rem;
+  padding: 1.5rem 1.5rem;
   letter-spacing: 2px;
+  text-decoration: none;
   transition: all 250ms linear 0s;
-  color: white;
+  color: var(--title);
 }
 
 header nav ul li a:hover {
-  transition: all 0.5s;
   text-shadow: 2px 2px 5px white;
+  transition: all 0.5s;
 }
 
 /* Home content */
@@ -54,18 +54,18 @@ header nav ul li a:hover {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 #home .intro {
   width: 50%;
-  height: 100%;
+  height: fit-content;
   z-index: 2;
 }
 
-#home .name {
+#home .leonardo {
   width: 550px;
-  margin-top: 19vh;
+  height: auto;
   margin-bottom: 0.3rem;
   font-size: 7rem;
   font-weight: 500;
@@ -90,25 +90,27 @@ header nav ul li a:hover {
 .intro span {
   font-size: 3rem;
   letter-spacing: 1px;
-  color: var(--title);
  }
 
 /* Glogal buttons */
 .buttons {
-  margin-top: 10vh;
-  display: block;
+  margin-top: 5vh;
+  white-space: nowrap;
 }
 
 .buttons > span {
   font-weight: 600;
   letter-spacing: 1px;
-  color: var(--purple);
+  white-space: nowrap;
+  color: var(--purple); 
 }
 
+/*social-buttons*/
 .btn-linkdin, 
 .btn-github {
   height: 80px;
-  width: 265px;
+  width: 250px;
+  min-width: 250px;
   margin-top: 2rem;
   display: inline-block;
   
@@ -119,7 +121,7 @@ header nav ul li a:hover {
   cursor: pointer;
 }
 
-/* Linkdin buttons */
+/* Linkdin button */
 .btn-linkdin span {
   position: relative;
   transition: 0.5s;
@@ -129,9 +131,9 @@ header nav ul li a:hover {
 .btn-linkdin span:after {
   content: '\00AB';
   position: absolute;
-  opacity: 0;
   top: 0;
   right: -20px;
+  opacity: 0;
   transition: 0.5s;
   font-style: italic;
 }
@@ -149,7 +151,7 @@ header nav ul li a:hover {
   color: #2867B2;
 }
 
-/* Gihub buttons */
+/* Gihub button*/
 .btn-github span {
   position: relative;
   transition: 0.5s;
@@ -159,9 +161,9 @@ header nav ul li a:hover {
 .btn-github span:after {
   content: '\00bb';
   position: absolute;
-  opacity: 0;
   top: 0;
   left: -20px;
+  opacity: 0;
   transition: 0.5s;
   color: var(--purple);
 }
@@ -178,18 +180,20 @@ header nav ul li a:hover {
   color: var(--purple);
 }
 
-/* home-photo-container */
+/*home-photo*/
 .photo {
   width: 50%;
-  height: 100%;
-  background: var(--back-light);
+  height: 90vh;
+  max-width: 650px;
+  margin-top: 10vh;
 }
 
 #home .photo img {
-  height: 650px;
-  width: 100%;
-  bottom: 0;
-  vertical-align: bottom;
+  width:  100%;
+  height: 80vh;
+  max-width: 650px;
+  margin-top: 10vh;
+  position: relative;
 }
 
 
@@ -206,19 +210,20 @@ header nav ul li a:hover {
 #projects .wrapper {
   width: 100%;
   height: 100%;
-  background: var(--back-dark);
+  background-color: royalblue;
 }
 
 #about .wrapper {
   width: 100%;
   height: 100%;
-  background: var(--back-dark);
+  background: red;
+
 }
 
 #contato .wrapper {
   width: 100%;
   height: 100%;
-  background: var(--back-dark);
+  background: yellow;
 }
 
 
@@ -229,13 +234,20 @@ header nav ul li a:hover {
 
 /* RESPONSIVE */
 
-/*Xnav*/
-@media (max-width: 768px) {
 
-  body .wrapper {
-    width: 85%;
-    max-width: 1400px;
-    margin: auto;
+@media screen and (max-width: 1024px) {
+  
+  header nav ul li a {
+    font-size: 1.8rem;
+    height: 10vh;
+  }
+
+  header nav ul {
+    justify-content: right;
+  }
+
+  .photo {
+    display: none;
   }
 
   /*Home-photo*/
@@ -243,12 +255,17 @@ header nav ul li a:hover {
     display: none;
   }
 
-  /*Home-intro*/
   #home .intro {
-    width: 100%;
-    height: 100%; 
+   width: 100%;
   }
-  
+
+  /*buttons-on*/
+  .btn-linkdin, 
+  .btn-github {
+    width: 49.6%;
+    height: 10vh;
+  }
+
   .one,
   .two,
   .three {
@@ -262,7 +279,7 @@ header nav ul li a:hover {
   .menu-toggle {
     width: 40px;
     height: 30px;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 
   /* fullscreen */
@@ -276,10 +293,6 @@ header nav ul li a:hover {
     height: 100vh;
     background-color: #7159c1; 
     z-index: 10;
-  }
-
-  header nav ul li a {
-    padding: 0.5rem 0rem 2rem 0rem; 
   }
 
   .menu-section.on nav {
@@ -312,10 +325,68 @@ header nav ul li a:hover {
   .menu-section.on nav ul a{
     transition-duration: 0.5s;
     font-size: 3rem;
-    display: block;    
+    display: block;  
+    padding: 1.5rem 1rem 1.5rem 1rem;  
   }
 }
 
-@media screen and (max-width: 768px) {
-  
+
+/*Xnav*/
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  body .wrapper {
+    width: 70%;
+    height: 100vh;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  #home .leonardo {
+    width: 100%;
+    height: 18vh;
+    font-size: 10rem;
+  }
+
+  #home .surname{
+    width: 100%;
+    height: 10vh;
+    font-size: 10rem;
+  }
+
+
+  .btn-linkdin, 
+  .btn-github {
+    width: 100%;
+    height: 10vh;
+  }
+
+  /* buttons */
+  .buttons {
+    margin-top: 8vh;
+    white-space: normal;
+  }
+
+  .buttons > span {
+    width: 100%;
+  }
 }
+
+@media (max-width: 450px) {
+
+  .buttons {
+    margin-top: 8vh;
+    white-space: normal;
+  }
+
+  body .wrapper {
+    width: 90%;
+    height: 100vh;
+    max-width: 1400px;
+    margin: auto;
+  }
+
+}
+
