@@ -32,7 +32,6 @@ html {
 }
 
 body {
-  height: 100vh;
   margin: auto;
   background: var(--back-dark);
 }
@@ -47,8 +46,16 @@ body, input, textarea, button {
   font: 400 1rem 'Roboto', sans-serif;
 }
 
+#home,
+#projects,
+#about,
+#contato {
+  height: 100vh;
+  max-width: 1440px;
+  margin: auto;
+}
+
 a {
-  font-size: 1.5rem;
   text-decoration: none;
   color: inherit;
 }
@@ -57,7 +64,6 @@ p {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-
 
 h1 {
   font-weight: 700;
@@ -73,6 +79,5 @@ h2 {
 
 h3 {
   background: var(--back-dark);
-  font-size: 4rem;
   font-weight: 700;
 }
