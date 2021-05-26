@@ -16,47 +16,6 @@ header nav {
   display: flex;
   margin:  auto;
   max-width: 1440px;
-  justify-content: flex-end;
-  text-align: center;
-}
-
-header nav ul li {
-  color: #6860B5;
-  text-align: center;
-  font-family: 'Sora', sans-serif;
-  
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 27px 23px 10px;
-  border: none;
-  border-radius: 0;
-  box-shadow: 0 0 0 2px rgba(104,96,181,0.3) inset;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease 0.3s;
-  justify-content: center;
-}
-
-header nav ul li a {
-  padding: 15px 23px 10px;
-  font-size: 1.1rem;
-  letter-spacing: 2px;
-  transition: all 4ms linear 0.5s;
-  color: white;
-  background: var(--purple);
-}
-
-header nav ul li a:hover {
-  transition: all 0.8s;
-  text-decoration: underline overline;
-  color: var(--back-light);
-}
-
-header nav {
-  height: 10vh;
-  display: flex;
-  margin:  auto;
-  max-width: 1440px;
   justify-content: center;
   text-align: center;
 }
@@ -73,6 +32,7 @@ header nav {
   margin:15px;
   filter:drop-shadow(0px 30px 25px rgba(12, 12, 12, 0.45));
 }
+
 .parallelogram:before,
 .parallelogram:after {
   content:"";
@@ -86,6 +46,7 @@ header nav {
   transition:1s all;
   background: var(--purple);
 }
+
 .parallelogram:before {
  background: var(--purple);
  transform:scale(1.05,1.12);
@@ -127,7 +88,7 @@ header nav {
 }
 
 #home .leonardo h3 {
-  font-size: 15vh;
+  font-size: 8rem;
   font-weight: 500;
   font-style: italic;
   text-align: center;
@@ -138,7 +99,7 @@ header nav {
 
 #home .surname h3{
   margin-top: 0.3rem;
-  font-size: 18vh;
+  font-size: 8.7rem;
   font-weight: 500;
   font-style: italic;
   text-align: center;
@@ -257,37 +218,8 @@ header nav {
 .photo img {
   width: 100%;
   height: 75vh;
+  max-height: 695px;
 }
-
-
-
-
-
-
-/*Projects*/
-#projects .wrapper {
-  width: 100%;
-  height: 100%;
-  background-color: royalblue;
-}
-
-#about .wrapper {
-  width: 100%;
-  height: 100%;
-  background: red;
-
-}
-
-#contato .wrapper {
-  width: 100%;
-  height: 100%;
-  background: yellow;
-}
-
-
-
-
-
 
 
 /*RESPONSIVE*/ 
@@ -330,6 +262,11 @@ header nav {
     display: none;
   }
 
+  .parallelogram {
+    width: 60%;
+    height: 100%;
+  }
+
   .btn-github,
   .btn-linkdin {
     width: 70%;
@@ -346,20 +283,21 @@ header nav {
     background-color: #fff;
     height: 5px;
     width: 100%;
-    margin: 6px auto;
+    margin: 9px auto;
+    margin-left: 15px;
     transition-duration: 0.3s;
   }
 
   .menu-toggle {
     width: 40px;
     height: 8vh;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   /*fullscreen*/
   .menu-section.on {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
@@ -375,7 +313,7 @@ header nav {
 
   .menu-section.on .menu-toggle {
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     top: 0;
   }
 
@@ -391,22 +329,13 @@ header nav {
     transform: rotate(-45deg) translate(8px, -9px);
   }
 
-  .menu-section.on nav ul {
-    text-align: center;
-    display: block;
-  }
-
-  .menu-section.on nav ul a{
-    transition-duration: 0.5s;
-    font-size: 3rem;
-    display: block;  
-    padding: 1.5rem 1rem 1.5rem 1rem;  
+  .menu-section.on nav button {
+    transition-duration: 0.5s; 
+    align-items: center;
   }
 }
 
 @media (max-width: 420px) {
-
-  
 
 }
 
