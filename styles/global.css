@@ -15,18 +15,9 @@
   --linkdin: rgb(40, 103, 178);
 }
 
-#home .wrapper {
-  width: 1280px;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 @media(max-width: 1080px) {
 	html {
-		font-size: 93.75%;#8257e6
+		font-size: 93.75%;
 	}
 }
 
