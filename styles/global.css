@@ -46,6 +46,10 @@ body, input, textarea, button {
   font: 400 1rem 'Roboto', sans-serif;
 }
 
+.header {
+  height: 10vh;
+}
+
 #home,
 #projects,
 #about,

@@ -61,7 +61,6 @@ header nav {
 #home .wrapper {
   width: 1280px;
   height: 90vh;
-  margin-top: 10vh;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -71,7 +70,6 @@ header nav {
 #home .intro {
   width: 695px;
   height: fit-content;
-  margin-top: 5rem;
   align-items: center;
   text-align: center;
   z-index: 2;
@@ -212,7 +210,6 @@ header nav {
 /* home-photo */
 .photo { 
   width: 695px;
-  margin-top: 5rem;
   z-index:2;
 }
 
@@ -341,5 +338,5 @@ header nav {
 }
 
 #about {
-  background: blue
+  background: blue;
 }
