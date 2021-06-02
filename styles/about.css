@@ -1,43 +1,56 @@
 #about .header {
   height: 10vh;
-  
-}
-
-#about {
-
 }
 
 .wrap-abt {
  width: 100%;
  max-width: 1280px;
  height: 90vh;
- margin: 0 auto;
- align-items: center;
  margin-top: 5vh;
- 
- height: fit-content;
- align-items: center;
+ margin: 0 auto;
  text-align: center;
- z-index: 2;
 }
 
 .about{
   height: 45vh;
   width: 100%;
-  border: 3px solid var(--green);
+  padding: 1rem 5rem;
   margin-bottom: 5vh;
   background: var(--back-light);
   border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .skills {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+#about span {
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 #about .skills-1, .skills-2 {
   width: 48%;
   height: 30vh;
-  border: 3px solid var(--green);
-  background: var(--back-light);
+  padding: 1rem 5rem;
   border-radius: 10px;
+  background: var(--back-light);
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about .skills .wrapper {
+  height: auto;
+  align-items: center;
+  margin: 0 auto;
 }
