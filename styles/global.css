@@ -5,14 +5,15 @@
 }
 
 :root {
-  --purple:rgb(130, 87, 230);
-  --back-light: rgb(32, 32, 36);
-  --back-dark: rgb(18, 18, 20);
+  --purple:#8257e5;
+  --back-light: #202024;
+  --back-dark: #121214;
   --title: rgb(115, 115, 128);
   --text: rgb(255, 255, 255);
-  --green: rgb(4, 211, 97);
+  --green: #04d361;
   --grey: rgb(168, 168, 179); 
   --linkdin: rgb(40, 103, 178);
+  --yellow: #ffcd1e;
 }
 
 @media(max-width: 1080px) {
@@ -34,6 +35,7 @@ html {
 body {
   margin: auto;
   background: var(--back-dark);
+  overflow: hidden; /* Hide scrollbars */
 }
 
 body {
@@ -55,7 +57,7 @@ body, input, textarea, button {
 #about,
 #contato {
   height: 100vh;
-  max-width: 1440px;
+  width: 95%;
   margin: auto;
 }
 
@@ -69,6 +71,7 @@ p {
   line-height: 1.5rem;
   color: var(--grey);
   line-height: 1.9rem;
+  letter-spacing: 1px;
 }
 
 h1 {
