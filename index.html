@@ -11,6 +11,7 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/about.css" />
   <link rel="stylesheet" href="./styles/projects.css" />
@@ -29,16 +30,15 @@
             <div class="one"></div>
             <div class="two"></div>
             <div class="three"></div>
-          </div>
-          <nav> 
-              <button class="parallelogram" id="nav-toggle"><a href="#home">Home</a></button>
-              <button class="parallelogram"><a href="#about">About</a></button>
-              <button class="parallelogram"><a href="#projects">Projects</a></button>
+          </div>  
+          <nav id="nav"> 
+            <button><a href="#home">Home</a></button>
+            <button><a href="#projects">Projects</a></button>
+            <button><a href="#about">About</a></button>
           </nav><!--topnav-->
       </div> 
     </header>    
  
-
     <section id="home">
       <div class="header"></div>
       <div class="wrapper">
@@ -76,36 +76,7 @@
       </div><!--wrapper-->
     </section>
 
-
-    <section id="about">
-      <div class="header"></div>
-        <div class="wrap-abt">
-          <div class="about">     
-            <span>About</span> 
-            <p>
-              Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
-            </p>  
-          </div><!--.about-->
-
-          <div class="skills">
-            <div class="skills-1">
-              <span>Experience</span>
-              <p>
-                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 
-              </p>
-            </div>
-
-            <div class="skills-2">
-              <span>Skills</span>
-              <p>
-                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33
-              </p>
-            </div>
-          </div><!--skills--->
-        </div><!--wrap-abt-->
-    </section><!--about-->
-
-
+   
     <section id="projects"> 
       <div class="wrapper">
         <div class="header"></div>
@@ -116,8 +87,7 @@
             <input type="radio" name="slider" title="slide3" class="slider__nav"/>
             <input type="radio" name="slider" title="slide4" class="slider__nav"/>
             <div class="slider__inner">
-              <div class="slider__contents">
-                
+              <div class="slider__contents">         
                 <img class=".slider__image" src="./public/Design sem nome.jpg" alt="">
                 <h2 class="slider__span">Portifólio</h2>
                 <p class="slider__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate omnis possimus illo quos, corporis minima!</p>
@@ -142,6 +112,52 @@
         </div>
       </div>
     </section>
+
+    <section id="about">
+      <div class="header"></div>
+        <div class="wrap-abt">
+          <div class="about">     
+            <span>About</span> 
+            <p>
+              Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+            </p>  
+          </div><!--.about-->
+
+          <div class="skills">
+            <div class="skills-1">
+              <span>Experience</span>
+              <div class="skills1-content">
+                <p>
+                  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 
+                </p>
+              </div>
+            </div>
+
+            <div class="skills-2">
+              <span>Skills</span>
+              <ul>
+                <div class="ul">
+                  <li>CSS3</li>
+                  <li>HTML5</li> 
+                  
+                  <li>Javascript</li>
+                </div>
+                <div class="ul">
+                  <li>Git</li>
+                  <li>Figma</li>
+                  <li>React.js</li>
+                </div>
+                <div class="ul">
+                  <li>Sass</li>
+                  <li>Tailwind</li>
+                  <li>UX|SEO principles</li>
+                </div>
+              </ul>
+            </div>
+          </div><!--skills--->
+        </div><!--wrap-abt-->
+    </section><!--about-->
+
    
   <script src="slides.js"></script>
   <script src="xmenu.js"></script>
