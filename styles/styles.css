@@ -338,5 +338,14 @@ nav button:before {
     clip-path: none;
     background: var(--purple);
   }
+
+  .btn-linkdin, 
+  .btn-github {
+    width: 372px;
+    height: 8vh;
+    display: block;
+    margin: auto;
+    margin-top: 1vh;
+  }
 }
 
