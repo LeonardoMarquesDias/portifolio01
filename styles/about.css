@@ -11,16 +11,13 @@
 }
 
 .about{
-  margin: auto;
-  height: 45vh;
   width: 100%;
+  height: 45vh;
+  
   padding: 1rem 5rem;
+  margin: auto;
   margin-top: 5vh;
   margin-bottom: 5vh;
- 
-  color: var(--green);
-  -webkit-box-shadow: 0px 5px 16px 5px #fffbfbd0; 
-  box-shadow: 0px 5px 16px 5px #000000;
   border-radius: 3px;
   background-color: var(--back-light);
 
@@ -30,77 +27,28 @@
   justify-content: center;
 }
 
+
 .skills {
+
+}
+
+.contact {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-#about span {
-  font-size: 3rem;
-  letter-spacing: 2px;
-  color: var(--green);
-  font-family: 'Sacramento', cursive;
-}
-
-.skills-1 {
-  width: 48.6%;
-  height: 30vh;
-  padding: 1rem 5rem;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 5px 16px 5px #000000; 
-  box-shadow: 0px 5px 16px 5px #000000; 
-  background-color: var(--back-light);
-}
-
-.skills-1 > div {
-  height: 5rem;
-}
-
-.skills-2 {
-  width: 48.6%;
-  height: 30vh;
-  padding: 1rem 5rem;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 5px 16px 5px #000000; 
-  box-shadow: 0px 5px 16px 5px #000000; 
-  background-color: var(--back-light);
-}
-
-.skills1-content {
-  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.skills .wrapper {
-  height: auto;
-  align-items: center;
-  margin: 0 auto;
-}
-
-#about ul  {
+.phone,
+.email,
+.contac-text {
   display: flex;
-  text-align: left;
-  justify-content: center;
+  padding: 0 2rem;
+  align-items: center;
 }
 
-#about ul li {
-  letter-spacing: 2px;
-  font-weight: 600;
-  line-height: 1.5rem;
-  list-style: none;
-  color: var(--grey);
-}
-
-#about ul li::before {
-  content: "\2022";
-  width: 1rem;
-  display: inline-block;  
-  color: var(--green);
-}
-
-#about .ul {
-  width: fit-content;
-  padding: 0rem 0.5rem;
+.phone,
+.email, span {
+  padding-right: 0.5rem;
 }
 
